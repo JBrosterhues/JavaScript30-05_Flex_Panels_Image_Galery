@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 0 0 0;
+}
+h1 {
+    text-align: center;
+}
+#gallery {
+    display: flex;
+    overflow: hidden;
+    max-height: 800px;
+    height: 100vh;
+}
+.image-block {
+    max-height: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    transition: flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+}
+.image-block p {
+    margin: 0 0 0 0;
+    font-size: 5vw;
+    color: green;
+    text-transform: uppercase;
+}
+.image-block > * {
+    transition: transform 0.5s;
+}
+.image-block p:first-child {
+    transform: translateY(-50vh);
+}
+.image-block p:last-child {
+    transform: translateY(50vh);
+}
+.transform-block p:first-child {
+    transform: translateY(0);
+}
+.transform-block p:last-child {
+    transform: translateY(0);
+}
+.transform-block {
+    flex: 50;
+}
+#image-1 {
+    background-image: url('img/RunningDog.jpg');
+}
+#image-2 {
+    background-image: url('img/Eagle.jpg');
+}
+#image-3 {
+    background-image: url('img/Gorilla.jpg');
+}
+#image-4 {
+    background-image: url('img/Hamster.jpg');
+}
+#image-5 {
+    background-image: url('img/BlackCat.jpg');
+}
